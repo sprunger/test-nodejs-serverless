@@ -119,4 +119,5 @@ functions:
 
 plugins:
   - serverless-pseudo-parameters
+  - serverless-jest-plugin
   

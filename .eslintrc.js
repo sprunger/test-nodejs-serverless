@@ -1,6 +1,7 @@
 module.exports = {
   env: {
-    node: true
+    node: true,
+    jest: true
   },
   parserOptions: { 
     ecmaVersion: 6 
@@ -9,7 +10,7 @@ module.exports = {
   plugins: ['prettier'], // activating esling-plugin-prettier (--fix stuff)
   rules: {
     'prettier/prettier': [ // customizing prettier rules (unfortunately not many of them are customizable)
-      'error',
+      'warn',
       {
         singleQuote: true, 
         trailingComma: 'all',

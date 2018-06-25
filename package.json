@@ -12,11 +12,13 @@
     "eslint-plugin-prettier": "^2.6.1",
     "prettier": "^1.13.5",
     "serverless": "^1.27.3",
+    "serverless-jest-plugin": "^0.1.6",
     "serverless-pseudo-parameters": "^1.6.0"
   },
   "main": "handler.js",
   "license": "MIT",
   "scripts": {
-    "lint": "yarn eslint . --cache"
+    "lint": "yarn eslint . --cache",
+    "test": "node_modules/.bin/serverless invoke test"
   }
 }
