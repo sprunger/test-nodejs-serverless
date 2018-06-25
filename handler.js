@@ -1,16 +1,17 @@
 'use strict';
 
-module.exports.hello = (event, context, callback) => {
+module.exports.helloName = (event, context, callback) => {
+  let name = 'stranger';
+  if (event.queryStringParameters && event.queryStringParameters.name) {
+    name = event.queryStringParameters.name;
+  }
   const response = {
     statusCode: 200,
-    body: JSON.stringify({
-      message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event,
-    }),
+    headers: {
+      'Access-Control-Allow-Origin': '*', // Required for CORS support to work
+    },
+    body: JSON.stringify({ message: `Hello, ${name}!` }),
   };
 
   callback(null, response);
-
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // callback(null, { message: 'Go Serverless v1.0! Your function executed successfully!', event });
 };
