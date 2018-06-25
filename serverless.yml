@@ -54,9 +54,13 @@ provider:
 #    - include-me.js
 #    - include-me-dir/**
 
-exclude:
-  - .git/**
-  - .travis.yml
+package:
+  include:
+    - handler.js
+    - src/**
+  exclude:
+    - .git/**
+    - .travis.yml
 
 functions:
   hello:
