@@ -19,6 +19,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "yarn eslint . --cache",
-    "test": "node_modules/.bin/serverless invoke test"
+    "unit": "serverless invoke test",
+    "functional": "serverless invoke -f helloName -d '{\"queryStringParameters\": {\"name\": \"Dude\"}}'"
   }
 }

@@ -1,0 +1,24 @@
+language: node_js
+
+node_js:
+  - 8
+
+os: osx
+
+sudo: false
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_install:
+  - node -v
+  - yarn -v
+
+install:
+  - travis_retry yarn install
+
+script:
+ 	yarn unit
+ 	yarn lint
