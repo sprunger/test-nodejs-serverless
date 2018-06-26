@@ -5,6 +5,7 @@
   "author": "Scott Sprunger",
   "dependencies": {},
   "devDependencies": {
+    "coveralls": "^3.0.1",
     "eslint": "^5.0.0",
     "eslint-config-google": "^0.9.1",
     "eslint-config-prettier": "^2.9.0",

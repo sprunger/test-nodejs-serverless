@@ -120,4 +120,8 @@ functions:
 plugins:
   - serverless-pseudo-parameters
   - serverless-jest-plugin
+
+custom:
+  jest:
+    collectCoverage: true
   
