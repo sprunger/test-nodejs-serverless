@@ -1,12 +1,5 @@
 language: node_js
 
-node_js:
-  - 8
-
-os: osx
-
-sudo: false
-
 script:
- 	yarn unit
- 	yarn lint
+ 	- yarn unit
+ 	- yarn lint
