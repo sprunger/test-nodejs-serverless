@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - 8
+
+os: osx
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_install:
+  - npm install --global
+
+install:
+  - travis_retry yarn install
+
+script:
+ 	yarn unit
+ 	yarn lint
