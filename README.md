@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/sprunger/starter-nodejs-serverless.svg?branch=master)](https://travis-ci.org/sprunger/starter-nodejs-serverless)
+[![Coverage Status](https://coveralls.io/repos/github/sprunger/starter-nodejs-serverless/badge.svg?branch=master)](https://coveralls.io/github/sprunger/starter-nodejs-serverless?branch=master)
 # starter-nodejs-serverless
 A starter project for Serverless Nodejs
 
